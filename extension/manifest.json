@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "LinguaLink Captions",
+  "version": "0.1.0",
+  "description": "Live Spanish + Hindi captions overlay for Google Meet.",
+  "content_scripts": [
+    {
+      "matches": ["https://meet.google.com/*"],
+      "js": ["content_script.js"],
+      "css": ["overlay.css"]
+    }
+  ],
+  "background": {
+    "service_worker": "service_worker.js"
+  }
+}

@@ -1,0 +1,90 @@
+#lingualink-overlay {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 99999;
+  width: min(420px, 90vw);
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgba(15, 18, 25, 0.9);
+  color: #f5f5f5;
+  font-family: "Segoe UI", Arial, sans-serif;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  pointer-events: auto;
+}
+
+#lingualink-overlay .ll-title {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.7;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: move;
+  user-select: none;
+}
+
+#lingualink-overlay .ll-status {
+  font-size: 11px;
+  margin-left: 8px;
+  opacity: 0.6;
+}
+
+#lingualink-overlay .ll-status.ok {
+  color: #8bdc8b;
+}
+
+#lingualink-overlay .ll-status.err {
+  color: #ff8a8a;
+}
+
+#lingualink-overlay .ll-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+#lingualink-overlay .ll-btn {
+  background: #263045;
+  color: #f5f5f5;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+#lingualink-overlay .ll-check {
+  display: inline-flex;
+  gap: 4px;
+  align-items: center;
+  font-size: 12px;
+}
+
+#lingualink-overlay .ll-check input {
+  margin: 0;
+}
+
+#lingualink-overlay .ll-line {
+  font-size: 16px;
+  margin: 6px 0;
+  line-height: 1.35;
+}
+
+#lingualink-overlay .ll-label {
+  font-weight: 600;
+  margin-right: 6px;
+  color: #8ac7ff;
+}
+
+#lingualink-overlay .ll-label.hi {
+  color: #ffb07a;
+}
+
+#lingualink-overlay.ll-collapsed .ll-line {
+  display: none;
+}

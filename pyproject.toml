@@ -1,0 +1,17 @@
+[project]
+name = "sign2speak"
+version = "0.1.0"
+description = "LinguaLink backend dependencies"
+requires-python = ">=3.10"
+dependencies = [
+  "fastapi",
+  "uvicorn[standard]",
+  "websockets",
+  "numpy",
+  "pydantic",
+  "transformers",
+  "huggingface_hub",
+  "safetensors",
+  "torch",
+  "sentencepiece",
+]
